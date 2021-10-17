@@ -126,6 +126,7 @@ body {
 .slider_flex_wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .slider_titles {
@@ -156,4 +157,16 @@ body {
     z-index: 999;
     transform: translate(0, 0);
     transition: .5s;
+}
+
+
+@media all and (max-width: 460px) {
+    .slider_flex_wrapper {
+        flex-direction: column-reverse;
+        row-gap: 30px;
+    }
+    
+    .slider_titles {
+        align-self: flex-start;
+    }
 }
